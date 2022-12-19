@@ -1,0 +1,142 @@
+.pokedex__container {
+    width: 100%;
+}
+
+.pokedex__title {
+    font-size: 1rem;
+    padding: 0 1em;
+    margin-bottom: .7em;
+    font-weight: 400;
+    position: relative;
+    left: 30px;
+}
+
+.pokedex__title .trainer__name {
+    color: #FE1936;
+    font-weight: 700;
+}
+
+.filter__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1em;
+    padding: .5em;
+}
+
+.filter__form {
+    padding: .3em;
+}
+
+.filter__form .filter__input {
+    width: 70%;
+    padding: 1em;
+    margin-left: 10px;
+    border-radius: 6px 0 0 6px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.filter__form .filter__input::placeholder {
+    color: #ccc;
+    font-weight: bold;
+}
+
+.filter__form .filter__btn {
+    padding: 1em;
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #D93F3F;
+    border-radius: 0 6px 6px 0;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.select__container {
+    width: 80%;
+    position: relative;
+}
+
+.filter__select {
+    width: 100%;
+    padding: .6em;
+    padding-left: 2em;
+    margin-right: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    appearance: none;
+}
+
+.arrow {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* seccion paginacion */
+.pagination__container {
+    width: 100%;
+    max-width: 600px;
+    padding: .2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* pokeCard Container */
+.poke__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    padding: 0.5em;
+}
+
+
+@media (min-width: 700px) {
+    .pokedex__title {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .filter__container {
+        flex-direction: row;
+    }
+
+    .filter__form {
+        width: 100%;
+    }
+
+    .filter__form .filter__input {
+        width: 70%;
+    }
+
+    .filter__form .filter__btn {
+        width: 28%;
+    }
+
+    .filter__select {
+        width: 100%;
+    }
+
+    .pagination__container {
+        width: 100%;
+        max-width: 900px;
+    }
+
+    .poke__container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (min-width: 700px) {
+    .filter__form .filter__input {
+        width: 60%;
+    }
+}

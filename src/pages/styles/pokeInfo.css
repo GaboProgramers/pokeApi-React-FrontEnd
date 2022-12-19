@@ -1,0 +1,384 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: .5em;
+    margin-top: 4em;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.info__header {
+    background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
+    margin-bottom: 1.3em;
+    height: 170px;
+    margin-top: 6em;
+}
+
+.info {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    top: -50%;
+    left: 25%;
+}
+
+.info img {
+    width: 240px;
+    aspect-ratio: 1;
+}
+
+.body__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    text-align: center;
+    background-color: white;
+}
+
+.body__info-title {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.body__info-title .info__id {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: .2em;
+    width: 60px;
+    background-color: #ffff;
+    color: #7c7c79d1;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.body__info-name {
+    position: relative;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #7c7c79d1;
+    font-weight: 500;
+}
+
+.info__name::before,
+.info__name::after {
+    content: "";
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    width: 100%;
+}
+
+.info__name::before {
+    top: 20px;
+    left: -160px;
+}
+
+.info__name::after {
+    top: 20px;
+    right: -160px;
+}
+
+.body__info-measures {
+    width: 100%;
+}
+
+.info__measure-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .7rem;
+    padding: .5em;
+    width: 100%;
+}
+
+.info__measure-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: .1em;
+}
+
+.info__measure-item .measure__item-stat {
+    font-size: .8rem;
+}
+
+.types__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    padding: 1em .5em;
+    text-align: center;
+}
+
+.types__type,
+.skill__container {
+    padding: .5em .3em;
+    width: 100%;
+}
+
+.type__title,
+.skill__title {
+    font-size: 1.3rem;
+    margin: .2em 0;
+    color: #444441c5;
+    margin-bottom: .7em;
+}
+
+.type__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+}
+
+.type__items {
+    gap: .5em;
+}
+
+.skills__items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    text-align: center;
+    gap: .5em;
+}
+
+.type__item,
+.skill__item {
+    font-size: 1.3rem;
+    border-radius: .2em;
+    text-transform: capitalize;
+}
+
+.type__item {
+    width: 100%;
+    padding: .3em 3em;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.skill__item {
+    width: 100%;
+    padding: .3em 1em;
+    color: rgb(140, 137, 137);
+    font-weight: 600;
+    border: 1px solid rgb(204, 204, 204);
+}
+
+.stats__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1.5em 1em;
+}
+
+.content__title-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats__title {
+    font-size: 2.3rem;
+    position: relative;
+    width: 100%;
+}
+
+.stats__title::before {
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+}
+
+.stats__img {
+    width: 100px;
+    opacity: .3;
+}
+
+.stats__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: .2em;
+}
+
+.stats__content {
+    padding: .1em;
+}
+
+.stats__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1em;
+}
+
+.stats__description-span {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.stats__description-base {
+    font-size: 1.2rem;
+}
+
+.stats__progress {
+    width: 100%;
+}
+
+.stats__progress .progress {
+    width: 100%;
+    padding: .8em;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: .6em;
+}
+
+.footer__title-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__title {
+    position: relative;
+    left: .5em;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #302f2fcc;
+}
+
+
+.footer__title::before {
+    content: "";
+    width: 70%;
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 120%;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+.footer__items {
+    border: 1px solid #ccc;
+    padding: .5em;
+    border-radius: 1em;
+    font-weight: 700;
+    background-color: #E5E5E5;
+}
+
+/* Clases par abackground de los typos */
+.grass {
+    background-color: #ABDAC6;
+}
+
+.poison {
+    background-color: #6C3D9A;
+}
+
+.fire,
+.flying {
+    background: linear-gradient(176.37deg, #F96D6F -32.26%, #E35825 22.55%, #E8AE1B 125.72%);
+}
+
+.water {
+    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+}
+
+@media (min-width: 700px) {
+    .info__name::before {
+        width: 200%;
+        top: 20px;
+        left: -410px;
+    }
+
+    .info__name::after {
+        width: 200%;
+        top: 20px;
+        right: -410px;
+    }
+
+    .info {
+        position: relative;
+        width: 200px;
+        height: 150px;
+        top: -50%;
+        left: 40%;
+    }
+
+    .info img {
+        width: 280px;
+    }
+
+    .info__measure-item .measure__item-stat {
+        font-size: 1.1rem;
+    }
+
+    .info__measure-items {
+        gap: 5em;
+    }
+
+    .info__measure-item {
+        font-size: 2rem;
+    }
+
+    .stats__title {
+        font-size: 2.5rem;
+        left: 20px;
+    }
+
+    .stats__title::before {
+        width: 88%;
+        left: 10%;
+    }
+
+    .footer__title {
+        left: 1em;
+        font-size: 2.5rem;
+        width: 100%;
+    }
+
+
+    .footer__title::before {
+        width: 75%;
+        left: 20%;
+    }
+
+    .footer__list {
+        gap: 1.4em;
+        padding: .8em;
+    }
+
+    .footer__items {
+        padding: .8em;
+    }
+}
