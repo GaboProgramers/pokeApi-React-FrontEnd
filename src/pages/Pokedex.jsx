@@ -4,10 +4,8 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 // React router
 import { useNavigate } from "react-router-dom";
-/* import DarkMode from "../components/pokedex/DarkMode"; */
 
 // Components
-import HeaderContainer from "../components/pokedex/HeaderContainer";
 import Pagination from "../components/pokedex/Pagination";
 import PokeCard from "../components/pokedex/PokeCard";
 
@@ -73,7 +71,6 @@ const Pokedex = () => {
     // Renderizado JSX
     return (
         <div className="pokedex__container">
-            {/* <DarkMode /> */}
             <h2 className="pokedex__title">
                 <span className="trainer__name">Welcome {trainer}</span>, here you can
                 find your favorite pokemon.{" "}

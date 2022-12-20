@@ -37,6 +37,9 @@
     margin-left: 10px;
     border-radius: 6px 0 0 6px;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
+    color: #FE1936;
+    font-size: 1.02rem;
+    font-weight: 600;
 }
 
 .filter__form .filter__input::placeholder {
@@ -50,6 +53,7 @@
     font-weight: 700;
     background-color: #D93F3F;
     border-radius: 0 6px 6px 0;
+    font-size: 1.02rem;
     box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15);
 }
 

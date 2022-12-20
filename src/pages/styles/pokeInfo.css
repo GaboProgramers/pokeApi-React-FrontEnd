@@ -5,7 +5,7 @@
     width: 100%;
     max-width: 90%;
     margin-bottom: .5em;
-    margin-top: 4em;
+    margin-top: 6em;
     box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.75);
     border-radius: 1em;
     overflow: hidden;
@@ -65,7 +65,6 @@
     position: relative;
     font-size: 2rem;
     text-transform: capitalize;
-    color: #7c7c79d1;
     font-weight: 500;
 }
 
@@ -238,11 +237,15 @@
 
 .stats__progress {
     width: 100%;
+    margin: .6em 0;
+    background-color: #ccc;
+    overflow: hidden;
+    border-radius: 1em;
 }
 
-.stats__progress .progress {
-    width: 100%;
-    padding: .8em;
+.stats__progress .progress__fill {
+    height: 10px;
+    border-radius: 1em;
 }
 
 .footer__container {
@@ -274,7 +277,7 @@
     background-color: #ccc;
     position: absolute;
     top: 50%;
-    left: 120%;
+    left: 110%;
 }
 
 .footer__list {
@@ -298,7 +301,7 @@
 
 /* Clases par abackground de los typos */
 .grass {
-    background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+    background-image: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
 }
 
 .rock {
@@ -364,6 +367,76 @@
 
 .dragon {
     background: linear-gradient(177.03deg, #4bb6e4 -22.97%, #4ca3c5 50.77%, #79b1c9 156.72%);
+}
+
+/* seccion para los colores dinamicos de el nombre del poquemon y los stats */
+.color-grass {
+    color: #62DB60;
+}
+
+.color-rock {
+    color: #7E7E7E;
+}
+
+.color-ghost {
+    color: #323569;
+}
+
+.color-bug {
+    color: #62DB60;
+}
+
+.color-ground {
+    color: #654008
+}
+
+.color-poison {
+    color: #5B3184;
+}
+
+.color-fire,
+.color-flying {
+    color: #F96D6F;
+}
+
+.color-water {
+    color: #133258;
+}
+
+.color-normal {
+    color: #735259;
+}
+
+.color-fighting {
+    color: #96402A;
+}
+
+.color-steel {
+    color: #0C1395;
+}
+
+.color-electric {
+    color: #c9cb35;
+}
+
+.color-ice {
+    color: #6FBEDF;
+}
+
+.color-dark {
+    color: #030706;
+}
+
+.color-fairy {
+    color: #971B45;
+}
+
+.color-psychic {
+    color: #f3f558;
+}
+
+.color-dragon {
+    color: #4bb6e4;
 }
 
 @media (min-width: 700px) {

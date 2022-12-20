@@ -34,7 +34,7 @@ const PokeCard = ({ url }) => {
                 </header>
                 <section className='card__info'>
                     <div className="info__container">
-                        <h3 className='info__title'>{pokeInfo?.name}</h3>
+                        <h3 className={`info__title color-${pokeInfo?.types[0].type.name}`}>{pokeInfo?.name}</h3>
                         <ul className='info__items'>
                             {
                                 pokeInfo?.types.map(type => (
@@ -53,7 +53,7 @@ const PokeCard = ({ url }) => {
                         {
                             pokeInfo?.stats.map(stat => (
                                 <li
-                                    className='stats__item'
+                                    className={`stats__item color-${pokeInfo?.types[0].type.name}`}
                                     key={stat.stat.name}>
                                     <span>{stat.stat.name}</span>
                                     <span>{stat.base_stat}</span>

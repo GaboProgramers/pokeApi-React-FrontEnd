@@ -1,8 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import ErrorNamePokemon from '../components/pokedex/ErrorNamePokemon'
-import HeaderContainer from '../components/pokedex/HeaderContainer'
 
 //Style Css
 import './styles/pokeInfo.css'
@@ -22,8 +20,6 @@ const PokedexInfo = () => {
             ))
     }, [id])
 
-    console.log(pokemon);
-
     return (
         <section className='pokedex__container'>
             <div className="content">
@@ -36,7 +32,7 @@ const PokedexInfo = () => {
                     <div className="body__info-title">
                         <span className="info__id">#{pokemon?.id}</span>
                         <div className="body__info-name">
-                            <p className="info__name">
+                            <p className={`info__name color-${pokemon?.types[0].type.name}`}>
                                 {pokemon?.name}
                             </p>
                         </div>
@@ -95,11 +91,14 @@ const PokedexInfo = () => {
                                             {stat.stat.name}:
                                         </span>
                                         <span className='stats__description-base'>
-                                            {stat.base_stat}/ 100
+                                            {stat.base_stat}/ 150
                                         </span>
                                     </div>
                                     <div className='stats__progress'>
-                                        <progress className='progress' max="100" value={stat.base_stat}></progress>
+                                        <div
+                                            className={`progress__fill ${pokemon?.types[0].type.name}`}
+                                            style={{ width: `${stat.base_stat / 1.5}%` }}
+                                        ></div>
                                     </div>
                                 </div>
                             ))

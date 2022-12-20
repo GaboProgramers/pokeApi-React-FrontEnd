@@ -35,6 +35,7 @@
 
 .paginate__item:hover {
     background-color: #ccc;
+    color: #000;
     border: 1px solid transparent;
 }
 
@@ -54,6 +55,7 @@
 
 .page__active {
     background-color: #ccc;
+    color: #000;
     border: 1px solid transparent;
 }
 

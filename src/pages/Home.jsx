@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import DarkMode from '../components/pokedex/DarkMode'
 import FooterContainer from '../components/pokedex/FooterContainer'
 import { setTrainerGlobal } from '../store/slices/trainer.slice'
 
@@ -38,6 +39,7 @@ const Home = () => {
                 <FooterContainer />
             </main>
         </div>
+
     )
 }
 

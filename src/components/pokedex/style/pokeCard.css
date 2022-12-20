@@ -18,7 +18,7 @@
     position: relative;
 }
 
-.poke__card:hover::after {
+/* .poke__card:hover::after {
     content: "Click To More Info";
     position: absolute;
     width: 100%;
@@ -35,7 +35,7 @@
     font-size: 3rem;
     font-weight: 800;
     opacity: .8;
-}
+} */
 
 .card__header {
     background: linear-gradient(178.92deg, #7EC6C5 0.92%, #ABDAC6 47.96%, #CAE099 99.08%);
@@ -77,8 +77,19 @@
 .info__items {
     display: flex;
     justify-content: center;
-    gap: .5em;
+    gap: .9em;
     font-size: 1.4rem;
+}
+
+.info__item:nth-child(2) {
+    position: relative;
+}
+
+.info__item:nth-child(2)::before {
+    content: "/";
+    position: absolute;
+    left: -22%;
+    font-weight: 400;
 }
 
 .card__stat {
@@ -110,7 +121,6 @@
 }
 
 .stats__item span:last-child {
-    color: rgb(213, 105, 66);
     font-size: 1.5rem;
     font-weight: bold;
 }

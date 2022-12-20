@@ -1,43 +1,21 @@
 import React from 'react'
 import './style/darkMode.css'
 
-const DarkMode = () => {
-
-    let clickedClass = "clicked"
-    const body = document.body
-    const lightTheme = "light"
-    const darkTheme = "dark"
-    let theme
-
-    if (localStorage) {
-        theme = localStorage.getItem('theme')
-    }
-
-    if (theme === lightTheme || theme === darkTheme) {
-        body.classList.add(theme)
-    } else {
-        body.classList.add(lightTheme)
-    }
-
-    const switchTheme = (e) => {
-        if (theme === darkTheme) {
-            body.classList.replace(darkTheme, lightTheme)
-            e.target.classList.remove(clickedClass)
-            localStorage.setItem('theme', 'light')
-            theme = lightTheme
-        } else {
-            body.classList.replace(lightTheme, darkTheme)
-            e.target.classList.add(clickedClass)
-            localStorage.setItem('theme', 'dark')
-            theme = darkTheme
-        }
-    }
+const DarkMode = ({ setDarkMode, darkMode }) => {
 
     return (
-        <button className={theme === 'dark' ? clickedClass : ""}
-            id="darkMode"
-            onClick={(e) => switchTheme(e)}>
-        </button>
+        <div className="container">
+            <div className="mt-1">
+                <span className='icon' style={{ color: darkMode ? "grey" : "yellow" }}>☀︎</span>
+                <div className="switch-checkbox">
+                    <label className="switch">
+                        <input type="checkbox" onChange={() => setDarkMode(!darkMode)} />
+                        <span className="slider round"> </span>
+                    </label>
+                </div>
+                <span className='icon' style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
+            </div>
+        </div>
     )
 }
 
