@@ -73,9 +73,6 @@ const Pokedex = () => {
     // Renderizado JSX
     return (
         <div className="pokedex__container">
-            <div className="container__header">
-                <HeaderContainer />
-            </div>
             {/* <DarkMode /> */}
             <h2 className="pokedex__title">
                 <span className="trainer__name">Welcome {trainer}</span>, here you can

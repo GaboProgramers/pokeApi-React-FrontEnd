@@ -26,9 +26,6 @@ const PokedexInfo = () => {
 
     return (
         <section className='pokedex__container'>
-            <div className="container__header">
-                <HeaderContainer />
-            </div>
             <div className="content">
                 <header className={`info__header ${pokemon?.types[0].type.name}`}>
                     <div className="info">
