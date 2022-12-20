@@ -52,6 +52,11 @@
     background-color: #a92d2d;
 }
 
+.page__active {
+    background-color: #ccc;
+    border: 1px solid transparent;
+}
+
 @media (min-width: 700px) {
     .paginate__list {
         gap: 3em;

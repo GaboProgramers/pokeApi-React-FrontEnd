@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 // React router
 import { useNavigate } from "react-router-dom";
+/* import DarkMode from "../components/pokedex/DarkMode"; */
 
 // Components
 import HeaderContainer from "../components/pokedex/HeaderContainer";
@@ -75,6 +76,7 @@ const Pokedex = () => {
             <div className="container__header">
                 <HeaderContainer />
             </div>
+            {/* <DarkMode /> */}
             <h2 className="pokedex__title">
                 <span className="trainer__name">Welcome {trainer}</span>, here you can
                 find your favorite pokemon.{" "}
@@ -95,6 +97,9 @@ const Pokedex = () => {
                         ))}
                     </select>
                 </div>
+            </div>
+            <div className="pagination__container">
+                <Pagination page={page} maxPages={maxPages} setPage={setPage} />
             </div>
             <div className="poke__container">
                 {

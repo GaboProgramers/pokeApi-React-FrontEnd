@@ -38,7 +38,7 @@ const Pagination = ({ page, maxPages, setPage }) => {
                 <li className='paginate__previous items' onClick={handlePrevious}><i className='bx bx-chevrons-left' ></i></li>
                 {
                     arrPages.map(e => (
-                        <li className='paginate__item items' onClick={() => handlePages(e)} key={e}>{e}</li>
+                        <li className={`paginate__item items ${page === e && 'page__active'}`} onClick={() => handlePages(e)} key={e}>{e}</li>
                     ))
                 }
                 <li className='paginate__next items' onClick={handleNext}><i className='bx bx-chevrons-right'></i></li>

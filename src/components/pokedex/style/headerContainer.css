@@ -10,7 +10,6 @@
     top: 30%;
     left: 7%;
     width: 200px;
-    aspect-ratio: 1;
 }
 
 .pokedex__header .line__red {
@@ -38,7 +37,6 @@
         top: 15%;
         left: 7%;
         width: 300px;
-        aspect-ratio: 1;
     }
 
     .header__img-pokebola {

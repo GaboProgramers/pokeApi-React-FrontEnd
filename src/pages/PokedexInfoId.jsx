@@ -30,7 +30,7 @@ const PokedexInfo = () => {
                 <HeaderContainer />
             </div>
             <div className="content">
-                <header className={`info__header ${pokemon?.types.name}`}>
+                <header className={`info__header ${pokemon?.types[0].type.name}`}>
                     <div className="info">
                         <img src={pokemon?.sprites.other['official-artwork'].front_default} alt={pokemon?.name} />
                     </div>

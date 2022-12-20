@@ -1,4 +1,4 @@
-.poke__card {
+.card__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,10 +7,14 @@
     width: 100%;
     max-width: 400px;
     overflow: hidden;
-    border: 10px solid #7EC6C5;
     border-radius: 1em;
-    margin-top: 2em;
+    padding: .7em;
+}
+
+.poke__card {
     cursor: pointer;
+    background-color: #ffffff;
+    overflow: hidden;
     position: relative;
 }
 
@@ -43,7 +47,7 @@
     position: relative;
     width: 200px;
     height: 150px;
-    top: -5%;
+    top: -10%;
     left: 20%;
 }
 
@@ -100,7 +104,7 @@
 }
 
 .stats__item span:first-child {
-    color: #ccc;
+    color: rgb(152, 146, 146);
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -114,12 +118,13 @@
 @media (min-width: 700px) {
 
     .card {
-        top: 0%;
-        left: 10%;
+        top: -5%;
+        left: 17%;
     }
 
     .card__info {
-        margin-bottom: -30px;
+        margin-top: 2em;
+        margin-bottom: -.1em;
     }
 
     .stats__item {
