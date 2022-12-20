@@ -13,7 +13,7 @@ const DarkMode = ({ setDarkMode, darkMode }) => {
                         <span className="slider round"> </span>
                     </label>
                 </div>
-                <span className='icon' style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
+                <span className='icon moon' style={{ color: darkMode ? "#c96dfd" : "grey" }}>☽</span>
             </div>
         </div>
     )
